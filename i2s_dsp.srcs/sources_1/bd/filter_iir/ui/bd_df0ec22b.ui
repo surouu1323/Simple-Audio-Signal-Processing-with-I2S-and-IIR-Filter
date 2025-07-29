@@ -1,0 +1,51 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.0",
+   "Default View_TopLeft":"-315,-42",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0
+#  -string -flagsOSRD
+preplace port port-id_Bck -pg 1 -lvl 0 -x -20 -y 20 -defaultsOSRD
+preplace port port-id_Mck -pg 1 -lvl 0 -x -20 -y 150 -defaultsOSRD
+preplace port port-id_sync_out -pg 1 -lvl 3 -x 590 -y 210 -defaultsOSRD
+preplace port port-id_busy -pg 1 -lvl 3 -x 590 -y 230 -defaultsOSRD
+preplace port port-id_sync_in -pg 1 -lvl 0 -x -20 -y 80 -defaultsOSRD
+preplace port port-id_reset -pg 1 -lvl 0 -x -20 -y 60 -defaultsOSRD
+preplace portBus iir_in -pg 1 -lvl 0 -x -20 -y 40 -defaultsOSRD
+preplace portBus iir_out -pg 1 -lvl 3 -x 590 -y 190 -defaultsOSRD
+preplace portBus b0 -pg 1 -lvl 0 -x -20 -y 270 -defaultsOSRD
+preplace portBus b1 -pg 1 -lvl 0 -x -20 -y 290 -defaultsOSRD
+preplace portBus b2 -pg 1 -lvl 0 -x -20 -y 310 -defaultsOSRD
+preplace portBus a1 -pg 1 -lvl 0 -x -20 -y 330 -defaultsOSRD
+preplace portBus a2 -pg 1 -lvl 0 -x -20 -y 350 -defaultsOSRD
+preplace portBus mul_outt -pg 1 -lvl 3 -x 590 -y 110 -defaultsOSRD
+preplace portBus A_out -pg 1 -lvl 3 -x 590 -y 250 -defaultsOSRD
+preplace portBus B_out -pg 1 -lvl 3 -x 590 -y 270 -defaultsOSRD
+preplace portBus dmm -pg 1 -lvl 3 -x 590 -y 310 -defaultsOSRD
+preplace portBus state_out -pg 1 -lvl 3 -x 590 -y 330 -defaultsOSRD
+preplace inst iir_filter_0 -pg 1 -lvl 2 -x 400 -y 260 -defaultsOSRD
+preplace inst mult_gen_0 -pg 1 -lvl 1 -x 120 -y 180 -defaultsOSRD
+preplace netloc Bck_1 1 0 2 NJ 20 250J
+preplace netloc Mck_1 1 0 1 NJ 150
+preplace netloc a0_1 1 0 2 NJ 270 NJ
+preplace netloc a1_1 1 0 2 NJ 290 NJ
+preplace netloc a2_1 1 0 2 NJ 310 NJ
+preplace netloc b1_1 1 0 2 NJ 330 NJ
+preplace netloc b2_1 1 0 2 NJ 350 NJ
+preplace netloc iir_filter_0_busy 1 2 1 NJ 230
+preplace netloc iir_filter_0_dm_vivado 1 2 1 NJ 310
+preplace netloc iir_filter_0_iir_out 1 2 1 NJ 190
+preplace netloc iir_filter_0_mul_enable 1 0 3 20 90 NJ 90 550
+preplace netloc iir_filter_0_mult_in_a 1 0 3 30 410 NJ 410 570
+preplace netloc iir_filter_0_mult_in_b 1 0 3 10 420 NJ 420 560
+preplace netloc iir_filter_0_state_out 1 2 1 NJ 330
+preplace netloc iir_filter_0_sync_out 1 2 1 NJ 210
+preplace netloc iir_in_1 1 0 2 NJ 40 220J
+preplace netloc mult_gen_0_P 1 1 2 240 110 NJ
+preplace netloc reset_1 1 0 2 NJ 60 210J
+preplace netloc sync_in_1 1 0 2 0J 280 250J
+levelinfo -pg 1 -20 120 400 590
+pagesize -pg 1 -db -bbox -sgen -160 0 740 430
+"
+}
+0

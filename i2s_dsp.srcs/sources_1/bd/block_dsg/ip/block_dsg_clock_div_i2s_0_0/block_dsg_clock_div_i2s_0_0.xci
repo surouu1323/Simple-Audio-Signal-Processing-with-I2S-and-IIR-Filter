@@ -1,0 +1,60 @@
+{
+  "schema": "xilinx.com:schema:json_instance:1.0",
+  "ip_inst": {
+    "xci_name": "block_dsg_clock_div_i2s_0_0",
+    "cell_name": "clock_div_i2s_0",
+    "component_reference": "xilinx.com:module_ref:clock_div_i2s:1.0",
+    "ip_revision": "1",
+    "gen_directory": "../../../../../../i2s_dsp.gen/sources_1/bd/block_dsg/ip/block_dsg_clock_div_i2s_0_0",
+    "parameters": {
+      "component_parameters": {
+        "Fs": [ { "value": "48000", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "Main_clk": [ { "value": "300000000", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "MCLK_n_factor": [ { "value": "256", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "MCLK_DIV": [ { "value": "11", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "BCK_DIV": [ { "value": "2", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "LRCK_DIV": [ { "value": "31", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "Component_Name": [ { "value": "block_dsg_clock_div_i2s_0_0", "resolve_type": "user", "usage": "all" } ]
+      },
+      "model_parameters": {
+        "Fs": [ { "value": "48000", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "Main_clk": [ { "value": "300000000", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "MCLK_n_factor": [ { "value": "256", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "MCLK_DIV": [ { "value": "11", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "BCK_DIV": [ { "value": "2", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "LRCK_DIV": [ { "value": "31", "resolve_type": "generated", "format": "long", "usage": "all" } ]
+      },
+      "project_parameters": {
+        "ARCHITECTURE": [ { "value": "zynq" } ],
+        "BASE_BOARD_PART": [ { "value": "miner.ebang.com.cn:ebaz4205:part0:1.0" } ],
+        "BOARD_CONNECTIONS": [ { "value": "" } ],
+        "DEVICE": [ { "value": "xc7z010" } ],
+        "PACKAGE": [ { "value": "clg400" } ],
+        "PREFHDL": [ { "value": "VERILOG" } ],
+        "SILICON_REVISION": [ { "value": "" } ],
+        "SIMULATOR_LANGUAGE": [ { "value": "MIXED" } ],
+        "SPEEDGRADE": [ { "value": "-1" } ],
+        "STATIC_POWER": [ { "value": "" } ],
+        "TEMPERATURE_GRADE": [ { "value": "" } ]
+      },
+      "runtime_parameters": {
+        "IPCONTEXT": [ { "value": "IP_Integrator" } ],
+        "IPREVISION": [ { "value": "1" } ],
+        "MANAGED": [ { "value": "TRUE" } ],
+        "OUTPUTDIR": [ { "value": "../../../../../../i2s_dsp.gen/sources_1/bd/block_dsg/ip/block_dsg_clock_div_i2s_0_0" } ],
+        "SELECTEDSIMMODEL": [ { "value": "" } ],
+        "SHAREDDIR": [ { "value": "../../ipshared" } ],
+        "SWVERSION": [ { "value": "2024.2" } ],
+        "SYNTHESISFLOW": [ { "value": "OOC_HIERARCHICAL" } ]
+      }
+    },
+    "boundary": {
+      "ports": {
+        "clk_in": [ { "direction": "in" } ],
+        "mclk": [ { "direction": "out" } ],
+        "bck": [ { "direction": "out" } ],
+        "lrck": [ { "direction": "out" } ]
+      }
+    }
+  }
+}

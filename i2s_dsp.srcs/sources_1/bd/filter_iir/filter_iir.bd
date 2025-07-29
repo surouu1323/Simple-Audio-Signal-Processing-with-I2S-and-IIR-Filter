@@ -1,0 +1,583 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xA2FAFC0667652C41",
+      "device": "xc7z010clg400-1",
+      "gen_directory": "../../../../i2s_dsp.gen/sources_1/bd/filter_iir",
+      "name": "filter_iir",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2024.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "iir_filter_0": "",
+      "mult_gen_0": ""
+    },
+    "ports": {
+      "Bck": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "ASSOCIATED_RESET": {
+            "value": "reset",
+            "value_src": "default"
+          },
+          "CLK_DOMAIN": {
+            "value": "filter_iir_Bck",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "Mck": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "filter_iir_Mck",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "iir_in": {
+        "type": "data",
+        "direction": "I",
+        "left": "23",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "iir_out": {
+        "type": "data",
+        "direction": "O",
+        "left": "23",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "sync_out": {
+        "type": "data",
+        "direction": "O",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "busy": {
+        "type": "data",
+        "direction": "O",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "sync_in": {
+        "type": "data",
+        "direction": "I",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "reset": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_HIGH"
+          }
+        }
+      },
+      "b0": {
+        "type": "data",
+        "direction": "I",
+        "left": "31",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "b1": {
+        "type": "data",
+        "direction": "I",
+        "left": "31",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "b2": {
+        "type": "data",
+        "direction": "I",
+        "left": "31",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "a1": {
+        "type": "data",
+        "direction": "I",
+        "left": "31",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "a2": {
+        "type": "data",
+        "direction": "I",
+        "left": "31",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "mul_outt": {
+        "type": "data",
+        "direction": "O",
+        "left": "63",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": [
+              "xilinx.com:interface:datatypes:1.0 {",
+              "DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum",
+              "{} maximum {}} value 64} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type generated dependency signed format",
+              "bool minimum {} maximum {}} value TRUE}}}} DATA_WIDTH 64",
+              "}"
+            ],
+            "value_src": "ip_prop"
+          }
+        }
+      },
+      "A_out": {
+        "type": "data",
+        "direction": "O",
+        "left": "31",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "B_out": {
+        "type": "data",
+        "direction": "O",
+        "left": "31",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "dmm": {
+        "type": "data",
+        "direction": "O",
+        "left": "7",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "state_out": {
+        "type": "data",
+        "direction": "O",
+        "left": "2",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      }
+    },
+    "components": {
+      "iir_filter_0": {
+        "vlnv": "xilinx.com:module_ref:iir_filter:1.0",
+        "ip_revision": "1",
+        "xci_name": "filter_iir_iir_filter_0_0",
+        "xci_path": "ip\\filter_iir_iir_filter_0_0\\filter_iir_iir_filter_0_0.xci",
+        "inst_hier_path": "iir_filter_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "iir_filter",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "reset",
+                "value_src": "constant"
+              },
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "user_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "filter_iir_Bck",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "reset": {
+            "type": "rst",
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_HIGH",
+                "value_src": "user_prop"
+              }
+            }
+          },
+          "iir_in": {
+            "direction": "I",
+            "left": "23",
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "undef",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "sync_in": {
+            "direction": "I",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "undef",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "iir_out": {
+            "direction": "O",
+            "left": "23",
+            "right": "0"
+          },
+          "sync_out": {
+            "direction": "O"
+          },
+          "busy": {
+            "direction": "O"
+          },
+          "mult_in_a": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "mult_in_b": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "mult_out": {
+            "direction": "I",
+            "left": "63",
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": [
+                  "xilinx.com:interface:datatypes:1.0 {",
+                  "DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum",
+                  "{} maximum {}} value 64} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type generated dependency signed format",
+                  "bool minimum {} maximum {}} value TRUE}}}} DATA_WIDTH 64",
+                  "}"
+                ],
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "mul_enable": {
+            "direction": "O"
+          },
+          "b0": {
+            "direction": "I",
+            "left": "31",
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "undef",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "b1": {
+            "direction": "I",
+            "left": "31",
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "undef",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "b2": {
+            "direction": "I",
+            "left": "31",
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "undef",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "a1": {
+            "direction": "I",
+            "left": "31",
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "undef",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "a2": {
+            "direction": "I",
+            "left": "31",
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "undef",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "dm_vivado": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "state_out": {
+            "direction": "O",
+            "left": "2",
+            "right": "0"
+          }
+        }
+      },
+      "mult_gen_0": {
+        "vlnv": "xilinx.com:ip:mult_gen:12.0",
+        "ip_revision": "22",
+        "xci_name": "filter_iir_mult_gen_0_0",
+        "xci_path": "ip\\filter_iir_mult_gen_0_0\\filter_iir_mult_gen_0_0.xci",
+        "inst_hier_path": "mult_gen_0",
+        "parameters": {
+          "ClockEnable": {
+            "value": "true"
+          },
+          "MultType": {
+            "value": "Parallel_Multiplier"
+          },
+          "Multiplier_Construction": {
+            "value": "Use_Mults"
+          },
+          "PipeStages": {
+            "value": "6"
+          },
+          "PortAWidth": {
+            "value": "32"
+          },
+          "PortBWidth": {
+            "value": "32"
+          }
+        }
+      }
+    },
+    "nets": {
+      "Bck_1": {
+        "ports": [
+          "Bck",
+          "iir_filter_0/clk"
+        ]
+      },
+      "Mck_1": {
+        "ports": [
+          "Mck",
+          "mult_gen_0/CLK"
+        ]
+      },
+      "a0_1": {
+        "ports": [
+          "b0",
+          "iir_filter_0/b0"
+        ]
+      },
+      "a1_1": {
+        "ports": [
+          "b1",
+          "iir_filter_0/b1"
+        ]
+      },
+      "a2_1": {
+        "ports": [
+          "b2",
+          "iir_filter_0/b2"
+        ]
+      },
+      "b1_1": {
+        "ports": [
+          "a1",
+          "iir_filter_0/a1"
+        ]
+      },
+      "b2_1": {
+        "ports": [
+          "a2",
+          "iir_filter_0/a2"
+        ]
+      },
+      "iir_filter_0_busy": {
+        "ports": [
+          "iir_filter_0/busy",
+          "busy"
+        ]
+      },
+      "iir_filter_0_dm_vivado": {
+        "ports": [
+          "iir_filter_0/dm_vivado",
+          "dmm"
+        ]
+      },
+      "iir_filter_0_iir_out": {
+        "ports": [
+          "iir_filter_0/iir_out",
+          "iir_out"
+        ]
+      },
+      "iir_filter_0_mul_enable": {
+        "ports": [
+          "iir_filter_0/mul_enable",
+          "mult_gen_0/CE"
+        ]
+      },
+      "iir_filter_0_mult_in_a": {
+        "ports": [
+          "iir_filter_0/mult_in_a",
+          "mult_gen_0/A",
+          "A_out"
+        ]
+      },
+      "iir_filter_0_mult_in_b": {
+        "ports": [
+          "iir_filter_0/mult_in_b",
+          "mult_gen_0/B",
+          "B_out"
+        ]
+      },
+      "iir_filter_0_state_out": {
+        "ports": [
+          "iir_filter_0/state_out",
+          "state_out"
+        ]
+      },
+      "iir_filter_0_sync_out": {
+        "ports": [
+          "iir_filter_0/sync_out",
+          "sync_out"
+        ]
+      },
+      "iir_in_1": {
+        "ports": [
+          "iir_in",
+          "iir_filter_0/iir_in"
+        ]
+      },
+      "mult_gen_0_P": {
+        "ports": [
+          "mult_gen_0/P",
+          "mul_outt",
+          "iir_filter_0/mult_out"
+        ]
+      },
+      "reset_1": {
+        "ports": [
+          "reset",
+          "iir_filter_0/reset"
+        ]
+      },
+      "sync_in_1": {
+        "ports": [
+          "sync_in",
+          "iir_filter_0/sync_in"
+        ]
+      }
+    }
+  }
+}
